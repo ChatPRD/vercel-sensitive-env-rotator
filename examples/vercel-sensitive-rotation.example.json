@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "key": "PRIMARY_SERVICE_TOKEN",
+      "production": "replace-with-new-production-key",
+      "preview": "replace-with-new-preview-key"
+    },
+    {
+      "key": "NOTIFICATION_PROVIDER_SECRET",
+      "all": "replace-with-one-value-for-production-and-preview"
+    },
+    {
+      "key": "INTERNAL_SIGNING_SECRET",
+      "production": "replace-with-new-production-only-secret"
+    }
+  ]
+}

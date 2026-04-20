@@ -1,0 +1,40 @@
+{
+  "name": "vercel-sensitive-env-rotator",
+  "version": "0.1.0",
+  "description": "Export and rotate Vercel environment variables into sensitive production and preview entries.",
+  "type": "module",
+  "homepage": "https://github.com/chatprd/vercel-sensitive-env-rotator#readme",
+  "bugs": {
+    "url": "https://github.com/chatprd/vercel-sensitive-env-rotator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatprd/vercel-sensitive-env-rotator.git"
+  },
+  "bin": {
+    "vercel-sensitive-envs": "./bin/vercel-sensitive-envs.mjs"
+  },
+  "files": [
+    "bin",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "help": "node ./bin/vercel-sensitive-envs.mjs --help",
+    "export": "node ./bin/vercel-sensitive-envs.mjs --dump-non-sensitive-manifest",
+    "rotate": "node ./bin/vercel-sensitive-envs.mjs"
+  },
+  "keywords": [
+    "vercel",
+    "env",
+    "environment-variables",
+    "security",
+    "rotation",
+    "cli"
+  ],
+  "license": "MIT"
+}

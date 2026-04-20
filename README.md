@@ -226,16 +226,3 @@ Run the standalone CLI directly:
 ```bash
 node ./bin/vercel-sensitive-envs.mjs --help
 ```
-
-## Future Work
-
-The current implementation focuses on Vercel. If you want support for another provider later, the clean path is to add a provider abstraction rather than bolting unrelated API logic directly into the current command flow.
-
-If you want to reduce risk further, the best next improvements would be:
-
-- add a prominent warning banner in the README that generated manifests may contain plaintext secrets
-- add a `--require-confirmation <project-name>` style guard before writes
-- add an optional `--backup-metadata-only` export that never writes values, only keys, targets, and comments
-- add a disclaimer that users are responsible for supplying valid replacement secrets and verifying redeploys
-
-If you want, I can add those safety improvements to both the local copy and the public repo.
